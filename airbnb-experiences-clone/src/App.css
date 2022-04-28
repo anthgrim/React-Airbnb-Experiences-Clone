@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 .App {
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -12,4 +14,34 @@
 .navbar-logo {
   height: 65px;
   width: 145px;
+}
+
+.header {
+  display: block;
+  text-align: left;
+  margin: 0 20%;
+}
+
+.main-title {
+  font-size: 46px;
+  margin: 20px 0px;
+}
+
+.sub-title {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 990px) {
+  .header {
+    margin: 0 10%;
+  }
+
+  .main-title {
+    font-size: 36px;
+  }
+
+  .sub-title {
+    font-size: 20px;
+  }
 }
