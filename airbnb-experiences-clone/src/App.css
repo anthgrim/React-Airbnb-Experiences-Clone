@@ -4,6 +4,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+span {
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
   display: flex;
   padding: 23px 30px;
@@ -29,6 +34,74 @@
 
 .sub-title {
   font-size: 30px;
+  font-weight: 300;
+}
+
+.card {
+  width: 225px;
+  height: 302px;
+  padding: 10px;
+  margin: 25px;
+}
+
+.card-img {
+  width: 225px;
+  height: 284px;
+  border-radius: 9px;
+}
+
+.card-btn {
+  position: absolute;
+  margin: 10px;
+  border: none;
+  background-color: white;
+  color: #222222;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+}
+
+.row {
+  width: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.card-btn:hover {
+  transform: scale(1.03);
+}
+
+.card-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.score {
+  font-size: 15px;
+  font-weight: 300;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+}
+
+.review {
+  color: #918e9b;
+  margin-left: 10px;
+}
+
+.description {
+  font-size: 15px;
+  font-weight: 300;
+  color: #222222;
+}
+
+.price {
+  font-weight: 700;
+  color: #222222;
+}
+
+.unit {
+  margin-left: 5px;
   font-weight: 300;
 }
 
