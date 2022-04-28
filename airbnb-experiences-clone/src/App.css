@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+.navbar {
+  display: flex;
+  padding: 23px 30px;
+  box-shadow: 0 3px 7.5px #00000034;
+  margin-bottom: 20px;
+}
+
+.navbar-logo {
+  height: 65px;
+  width: 145px;
+}
