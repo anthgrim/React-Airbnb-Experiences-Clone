@@ -4,7 +4,7 @@ import image from "../images/imgCollection.jpg";
 const Hero = () => {
   return (
     <>
-      <img src={image} alt="imgCollection" />
+      <img src={image} alt="imgCollection" className="hero-img" />
       <div className="header">
         <h1 className="main-title">Online Experiences</h1>
         <h3 className="sub-title">

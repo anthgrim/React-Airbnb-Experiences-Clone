@@ -44,4 +44,8 @@
   .sub-title {
     font-size: 20px;
   }
+
+  .hero-img {
+    width: 500px;
+  }
 }
