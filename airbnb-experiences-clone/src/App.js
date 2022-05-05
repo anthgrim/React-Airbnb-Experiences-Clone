@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <Card
-        targetImg="swim.jpg"
+        img="swim.jpg"
         rating="5.0"
         reviewCount={6}
         country="USA"

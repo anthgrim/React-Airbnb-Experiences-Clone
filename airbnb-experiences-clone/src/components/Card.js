@@ -1,14 +1,16 @@
 import React from "react";
 import star from "../images/star.jpg";
 
-const Card = ({ targetImg, rating, reviewCount, country, title, price }) => {
-  let imgPath = "../images/" + targetImg;
-  console.log(imgPath);
+const Card = ({ img, rating, reviewCount, country, title, price }) => {
   return (
     <>
       <div className="card">
         <button className="card-btn">SOLD OUT</button>
-        <img src={`../images/${targetImg}`} alt="swim" className="card-img" />
+        <img
+          src={require(`../images/${img}`)}
+          alt="swim"
+          className="card-img"
+        />
         <section className="card-content">
           <div className="row">
             <img src={star} alt="star" className="card-icon" />
