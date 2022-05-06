@@ -2,7 +2,7 @@ import React from "react";
 import star from "../images/star.jpg";
 import data from "../Data"
 
-const Card = ({ img, rating, reviewCount, country, title, price }) => {
+const Card = () => {
   return (
     <>
       {data.map((element) => {
