@@ -37,11 +37,17 @@ span {
   font-weight: 300;
 }
 
+.card-container{
+  margin: 0 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .card {
   width: 225px;
   height: 302px;
-  padding: 25px;
-  margin: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-img {
@@ -61,7 +67,6 @@ span {
 }
 
 .row {
-  width: inherit;
   display: flex;
   align-items: center;
 }
@@ -119,6 +124,14 @@ span {
   }
 
   .hero-img {
-    width: 500px;
+    width: 450px;
+  }
+
+  .card-container{
+    flex-direction: column;
+  }
+
+  .card{
+    margin: 50px 20%;
   }
 }
