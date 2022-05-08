@@ -1,15 +1,14 @@
 import React from "react";
 import star from "../images/star.jpg";
-import data from "../Data"
 
 const Card = (props) => {
-  const { img, rating, reviewCount, location, title, price, openSpots } = props
+  const { coverImg, stats:{ rating, reviewCount }, location, title, price, openSpots } = props.item
   return (
     <>
       <div className="card">
         <button className="card-btn">{openSpots === 0 ? "Sold Out" : "Book Now"}</button>
         <img
-          src={require(`../images/${img}`)}
+          src={require(`../images/${coverImg}`)}
           alt="swim"
           className="card-img"
         />

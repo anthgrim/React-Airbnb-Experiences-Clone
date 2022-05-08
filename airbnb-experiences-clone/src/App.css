@@ -59,6 +59,7 @@ span {
 .card-btn {
   position: absolute;
   margin: 10px;
+  padding: 5px 10px;
   border: none;
   background-color: white;
   color: #222222;
