@@ -2,41 +2,35 @@ import React from "react";
 import star from "../images/star.jpg";
 import data from "../Data"
 
-const Card = () => {
+const Card = (props) => {
+  const { img, rating, reviewCount, location, title, price, openSpots } = props
   return (
     <>
-      <div className="card-container">
-        {data.map((element) => {
-          return (
-            <div className="card">
-            <button className="card-btn">{element.openSpots === 0 ? "Sold Out" : "Book Now"}</button>
-            <img
-              src={require(`../images/${element.coverImg}`)}
-              alt="swim"
-              className="card-img"
-            />
-              <section className="card-content">
-                <div className="row">
-                  <img src={star} alt="star" className="card-icon" />
-                  <span className="score">{element.stats.rating}</span>
-                  <span className="score review">
-                    {`(${element.stats.reviewCount})`} - {element.location}
-                  </span>
-                </div>
-                <div className="row">
-                  <span className="description">{element.title}</span>
-                </div>
-                <div className="row">
-                  <span className="price">
-                    From ${element.price}/<span className="unit">person</span>{" "}
-                  </span>
-                </div>
-              </section>
+      <div className="card">
+        <button className="card-btn">{openSpots === 0 ? "Sold Out" : "Book Now"}</button>
+        <img
+          src={require(`../images/${img}`)}
+          alt="swim"
+          className="card-img"
+        />
+          <section className="card-content">
+            <div className="row">
+              <img src={star} alt="star" className="card-icon" />
+              <span className="score">{rating}</span>
+              <span className="score review">
+                {`(${reviewCount})`} - {location}
+              </span>
             </div>
-          )
-        })}  
-      </div>
-        
+            <div className="row">
+              <span className="description">{title}</span>
+            </div>
+            <div className="row">
+              <span className="price">
+                From ${price}/<span className="unit">person</span>{" "}
+              </span>
+            </div>
+          </section>
+        </div> 
     </>
   );
 };
